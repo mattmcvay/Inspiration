@@ -1,4 +1,170 @@
-.header {
-    background-color: rgb(255, 136, 0);
-    
+button {
+  
+  color: rgb(77, 0, 128);
+  background-color:darkgrey;
+  border-color: rgb(77, 0, 128);
+  border-width: 1.5px;
+  font-style: italic;
+  opacity: .4;
+  
 }
+
+button:hover {
+  opacity: 1;
+}
+
+.header {
+    
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    color: rgb(77, 0, 128);
+    margin-top: 0;
+    margin-bottom: -30px; 
+    text-shadow: -1px 1px black;  
+}
+
+.inspiration {
+  color: rgb(77, 0, 128);
+  font-weight: 100;
+  
+}
+
+.list {
+    color:rgb(77, 0, 128);;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;     
+}
+  
+  .list  li { 
+    color: rgb(77, 0, 128);
+    font-style: italic;
+    display: inline-block;
+    font-size: 30px;
+    padding: 50px;  
+    text-shadow: -1px 1px black; 
+  }
+
+  html {
+    background-color: gray; 
+    color: rgb(77, 0, 128);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    transition: background-color 2s cubic-bezier(1, 1, 1, 1); 
+	  transition-delay: 0s; 
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  
+
+  * {box-sizing:border-box}
+
+
+.slideshow {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+img {
+  border-radius: 15px;
+  box-shadow:  -5px 5px 6px 2px rgba(98, 0, 128, 0.158);
+  border: .1em black solid;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  color: drgb(77, 0, 128);;
+  background-color: rgba(0, 0, 0, 0.541);
+}
+
+
+.quotes {
+ 
+  color: rgb(77, 0, 128);;
+  font-style: italic;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-shadow: -1px 1px black;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+  
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+ /*-- Custom Media Query --*/
+
+@media  (max-width: 760px) {
+  .list li:not(.exclude) {
+      display: none;
+    }
+    h2 {
+      padding-bottom: 30px;
+    }
+    .inspiration {
+      font-size: 27px;
+    }
+    .quotes {
+      padding-top: 20px;
+    }
+     
+}
+
+
+ 
+
